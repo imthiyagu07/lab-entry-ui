@@ -17,6 +17,34 @@
   top: 0;
   transition: transform 1.5s ease-in-out;
   z-index: 5;
+  color: #fff;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  padding-left: 100px;
+}
+
+.left-heading{
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+.right-heading{
+  text-align: right;
+  font-size: 40px;
+  padding-right: 100px;
+}
+
+.unorder-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.number{
+  font-size: 40px;
+  font-weight: bold;
 }
 
 /* Left and Right door positions */
@@ -46,18 +74,6 @@
   0% {
     opacity: 1;
     transform: scale(1) rotate(0deg);
-  }
-  25% {
-    opacity: 0.9;
-    transform: scale(0.95) rotate(60deg);
-  }
-  50% {
-    opacity: 0.7;
-    transform: scale(0.85) rotate(120deg);
-  }
-  75% {
-    opacity: 0.4;
-    transform: scale(0.7) rotate(240deg);
   }
   100% {
     opacity: 0;
@@ -89,6 +105,7 @@
 
 .login-container label {
   color: #000;
+  text-align: center;
 }
 
 .login-container input {
@@ -116,6 +133,6 @@
 
 .error {
   color: #ff5252;
-  margin-top: 5px;
   font-weight: bold;
+  text-align: center;
 }

@@ -20,11 +20,29 @@ const LabPage = ({ remainingTime, onExit }) => {
   }
 
   return (
-    <div className="lab-page">
+    <main className="lab-container">
       <h1 className="lab-heading">Welcome to the Lab</h1>
-      <p className="lab-time">Remaining Time: <span className="time">{formatTime(time)}</span></p>
-      <button onClick={() => onExit(time)} className="exit-btn">Exit Lab</button>
-    </div>
+      <div className="lab-page">
+        <div className="container-1">
+          <select className="lab-select">
+            <option value="Programming">Programming</option>
+            <option value="Framework">Framework</option>
+            <option value="Library">Library</option>
+          </select>
+          <p className="lab-time">Remaining Time: <span className="time">{formatTime(time)}</span></p>
+          <button onClick={() => onExit(time)} className="exit-btn">Exit Lab</button>
+        </div>
+        <div className="container-2">
+          <h1>HTML</h1>
+          <h1>TAILWIND CSS</h1>
+          <h1>REACT JS</h1>
+          <h1>NODE JS</h1>
+          <h1>PYTHON</h1>
+          <h1>JAVA</h1>
+          <h1>SQL</h1>
+        </div>
+      </div>
+    </main>
   );
 };
 
